@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>Ingenian Test</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</HEAD>
+<BODY>
+<P>Pagina que solicitas citas mediante They Said So Quotes API</P>
+
+Selecionar la Categoria sobre la cual se quiere la cita <br/><br/>
+Categoria
+<form name="login_form" action="/nueva_cita"
+onsubmit="return validateForm()" method="get">
+  <select name="categoria">
+	<option value="inspire">inspire</option>
+	<option value="management">management</option>
+	<option value="sports">sports</option>
+	<option value="life">life</option>
+	<option value="funny">funny</option>
+	<option value="love">love</option>
+	<option value="art">art</option>
+	<option value="students">students</option>
+  </select>
+<BR><input type="submit" value="SolicitarCita">
+</form>
+
+<br/>
+
+Cita <br/>{{quote}}<br/><br/>
+
+
+Autor <br/>{{author}}<br/><br/><br/>
+
+
+
+Esta cita fue tomada de {{copyright}} 
+</BODY>
+</HTML>
